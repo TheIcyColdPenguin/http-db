@@ -1,0 +1,26 @@
+{
+  "name": "http-db",
+  "version": "1.0.0",
+  "description": "A simple HTTP wrapper over an sqlite3 database to use across programs",
+  "main": "build/index.js",
+  "type": "module",
+  "repository": "https://github.com/TheIcyColdPenguin/http-db",
+  "author": "TheIcyColdPenguin",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "sequelize": "^6.7.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/validator": "^13.6.5"
+  },
+  "scripts": {
+    "start": "tsc && node .",
+    "dev": "nodemon"
+  }
+}
