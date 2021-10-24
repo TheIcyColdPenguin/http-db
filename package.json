@@ -20,7 +20,9 @@
     "@types/validator": "^13.6.5"
   },
   "scripts": {
-    "start": "tsc && node .",
+    "build": "tsc",
+    "start": "node .",
+    "build:start": "tsc && node .",
     "dev": "nodemon"
   }
 }
