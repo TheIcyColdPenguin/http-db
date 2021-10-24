@@ -51,7 +51,7 @@ app.post('/create', async (req, res) => {
         res.status(201).json({ token: localApp.id, name: localApp.name, data: localApp.data });
     } catch (e) {
         console.error(e);
-        res.status(400).send('Loal App `name` already taken. Please choose a new name');
+        res.status(400).send('Local App `name` already taken. Please choose a new name');
     }
 });
 
